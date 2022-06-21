@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <defs>
+        <path d="M-0.782468952,2.41552275 L3.70048107,6.89828808 L8.18353858,2.41552275 C8.32637865,2.27268267 8.55114129,2.26169498 8.70658483,2.38255965 L8.74391405,2.41552275 L9.58447725,3.25608595 C9.72731733,3.39892603 9.73830502,3.62368866 9.61744035,3.77913221 L9.58447725,3.81646142 L4.40758321,8.99342339 C4.01707722,9.38396598 3.38391224,9.38397014 2.99338539,8.99344841 C2.99338014,8.99344316 2.9933749,8.99343791 2.99338539,8.99341693 L-2.18340763,3.81646142 L-2.18340763,3.81646142 C-2.33815104,3.66171801 -2.33815104,3.41082937 -2.18340763,3.25608595 L-1.34284442,2.41552275 C-1.18810101,2.26077933 -0.937212365,2.26077933 -0.782468952,2.41552275 Z" id="path-1"></path>
+    </defs>
+    <g id="WEB-ELEMENTS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="theSIMshop_LP_desktop" transform="translate(-245.000000, -1084.000000)">
+            <g id="subBanners" transform="translate(105.000000, 834.000000)">
+                <g id="copy" transform="translate(32.000000, 158.000000)">
+                    <g id="arrow" transform="translate(108.799465, 92.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1" transform="translate(3.700535, 6.000000) scale(1, -1) rotate(-90.000000) translate(-3.700535, -6.000000) "></use>
+                        </mask>
+                        <use id="Path" fill="#979797" fill-rule="nonzero" transform="translate(3.700535, 6.000000) scale(1, -1) rotate(-90.000000) translate(-3.700535, -6.000000) " xlink:href="#path-1"></use>
+                        <g id="🎨-colour" mask="url(#mask-2)" fill="#000000">
+                            <g transform="translate(-4.799465, -2.000000)" id="Rectangle-3">
+                                <rect x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

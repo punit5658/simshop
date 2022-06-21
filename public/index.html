@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Grab & Go SIM Cards</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="fonts.css">
+
+        <style>
+            body {
+                font-family: "Futura PT W01 Medium";
+                font-size: 18px;
+            }
+            h2 {
+                font-family: "Futura PT W01 Bold";
+                font-size: 30px;
+                color: rgba(0,0,0, 0.9);
+            }
+            .navbar {
+                height: 81px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 900;
+                background-color: white;
+                font-family: "Futura PT W01 Bold";
+                font-size: 16px;
+            }
+            .navbar-brand {
+                margin-left: 35px;
+            }
+            .nav-item {
+                padding-left: 24px;
+                padding-right: 24px;
+                
+            }
+            .nav-link {
+                color: black;
+            }
+            .nav-link-lang {
+                font-family: "Futura PT W01 Medium";
+                color: rgba(0, 0, 0, 0.55);
+            }
+            .nav-img-globe {
+                position: relative;
+                top: 4px;
+                right: 10px;
+                width: 17px;
+                height: 17px;
+                background: url("images/icons/globe.svg") no-repeat;
+            }
+            .hero-img-div {
+                position: relative;
+                z-index: 10;
+                width: 1020px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-img-left {
+                position: relative;
+                z-index: 10;
+                top: 42px;
+                width: 386px;
+                height: 411px;
+                background: url("images/graphics/desktop-left-SIM-images.svg") no-repeat;
+            }
+            .hero-img-right {
+                width: 443px;
+                height: 470px;
+                background: url("images/graphics/desktop-right-SIM-images.svg") no-repeat;
+            }
+            .hero-content {
+                position: relative;
+                z-index: 20;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+            }
+            .hero-headline {
+                position: relative;
+                z-index: 30;
+                font-family: "Futura PT W01 Bold";
+                font-size: 60px;
+            }
+            .hero-headline-red {
+                color: RGB(2215,35,40);
+            }
+            .hero-section {
+                width:100%;
+                height:534px;
+                margin-top: 119px;
+                /*padding-top: 81px;*/
+                position:relative;
+            }
+            .cards-section {
+                background-color: rgb(239,239,239);
+                min-height: 640px;
+                width: 100%;
+                text-align: center;
+            }
+            .cards-container {
+                padding-top: 97px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1300px;
+            }
+            .card {
+                --bs-card-border-color: none;
+                text-align: left;
+                min-height: 400px;
+                margin-top:10px;
+                margin-bottom: 20px;
+                min-width: 270px;
+                max-width: 400px;
+            }
+            .card > img {
+                margin-top: 40px;
+                margin-left: 35px;
+                height: 70px;
+            }
+            .card-img-logo-lucky {
+                width: 158px;
+            }
+            .card-img-logo-virgin {
+                width: 160px;
+            }
+            .card-img-logo-bell {
+                width: 125px;
+            }
+            .card-body {
+                padding-left: 35px;
+            }
+            .card-body-text {
+                min-height: 100px;
+                margin-top: 50px;
+            }
+            .card-link-sn {
+                text-transform: uppercase;
+                font-family: "Futura PT W01 Bold";
+                text-decoration: underline;
+            }
+            .card-mice {
+                font-family: "Futura PT W01 Bold";
+                font-size: 16px;
+                vertical-align: text-bottom;
+            }
+            .card-link-sn::after {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 12px;
+                height: 12px;
+                position: relative;
+                top: -2px;
+                left: 8px;
+                background: url("images/icons/arrow.svg") no-repeat;
+                background-size: contain;
+            }
+            .map-section {
+                background-color: rgb(255,255,255);
+                min-height: 640px;
+                width: 100%;
+                text-align: center;
+            }
+            .map-container {
+                padding-top: 97px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1300px;
+            }
+            .foot-section {
+                background-color: rgb(255,255,255);
+                height: 100px;
+                width: 100%;
+                text-align: center;
+            }
+            .foot-container {
+                padding-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logos/THE_SIM_SHOP_LOGO_ENG_BLACKRED_OUTLINE.svg" alt="" width="88" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">SHOP SIMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FIND US</a>
+                        </li>
+                        <li class="nav-item">  
+                            <a class="nav-link nav-link-lang float-end" href="#">
+                                <div class="nav-img-globe float-start"></div>
+                                Français
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="hero-img-div">
+                <div class="hero-img-left float-start"></div>
+                <div class="hero-img-right float-end"></div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="hero-content">
+                        <h2 class="hero-headline">Grab <span class="hero-headline-red">&</span> Go SIM Cards</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <div class="cards-container">
+                <h2>Stay connected in Canada.</h2>
+                <p>Bring your own phone and get a Canadian SIM card with us. Choose from one of our brands to get started.</p>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="images/logos/LuckyMobile_EN_Regular_Blue_RGB.svg" class="card-img-top card-img-logo-lucky" alt="Lucky Mobile Logo">
+                            <div class="card-body">
+                                <p class="card-text card-body-text">
+                                    Get a cheap prepaid phone plain from $15/mo. and start smiling. A lot.
+                                </p>
+                                <p class="card-link-sn card-text">
+                                    <a>Shop now</a><div class="card-link-sn-ab"></div>
+                                </p>
+                                <p class="align-bottom card-text card-mice">
+                                    <u>Subscribe</u> to Lucky Mobile and get great offers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="images/logos/VirginPlus_RedBlack_RGB_H.svg" class="card-img-top card-img-logo-virgin" alt="Virgin Plus Logo">
+                            <div class="card-body">
+                                <p class="card-text card-body-text">
+                                    Grab value-packed plans and get deals on food, fashion and more with Member Benefits.
+                                </p>
+                                <p class="card-link-sn card-text">
+                                    <a>Shop now</a><div class="card-link-sn-ab"></div>
+                                </p>
+                                <p class="align-bottom card-text card-mice">
+                                    <u>Subscribe</u> to Virgin Plus and get hot offers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="images/logos/Bell_BLUE_RGB.svg" class="card-img-top card-img-logo-bell" alt="Bell Logo">
+                            <div class="card-body">
+                                <p class="card-text card-body-text">
+                                    Get on Canada’s best 5G network.
+                                </p>
+                                <p class="card-link-sn card-text">
+                                    <a>Shop now</a><div class="card-link-sn-ab"></div>
+                                </p>
+                                <p class="align-bottom card-text card-mice">     
+                                    <u>Subscribe</u> to Bell and get amazing offers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-container">
+                <h2>Come find us at Vancouver International Airport!</h2>
+                <p>We’re located by the USA & International Arrivals on level 2, next to the food court & escalators.</p>
+                <img height="640px" src="images/graphics/VancouverTerminalMap_Page_1_Image_0001.png">
+            </div>
+        </section>
+
+        <section class="foot-section">
+            <div class="foot-container">
+                <p>© The SIM Shop. All rights reserved.</p>
+            </div>
+        </section>
+
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
