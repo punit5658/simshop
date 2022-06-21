@@ -368,8 +368,23 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
         <script>
-            $('#showen').click(function(){ window.location.replace(window.location.pathname + '?en'); return false; });
-            $('#showfr').click(function(){ window.location.replace(window.location.pathname + '?fr'); return false; });
+            function showen () 
+            {
+                $(":lang(fr)").hide();
+                $(":lang(en)").show();
+                $(".nav-link:lang(en)").css('display', 'block');
+                window.history.replaceState("", "", window.location.pathname + '?en')
+            }
+            function showfr () 
+            {
+                $(":lang(en)").hide();
+                $(":lang(fr)").show();
+                $(".nav-link:lang(fr)").css('display', 'block');
+                window.history.replaceState("", "", window.location.pathname + '?fr')
+            }
+            
+            $('#showen').click(function(){ showen(); return false; });
+            $('#showfr').click(function(){ showfr(); return false; });
 
             let searchParams = new URLSearchParams(window.location.search)
 
@@ -377,15 +392,11 @@
             {
                 if (searchParams.has('fr'))
                 {
-                    $(":lang(en)").hide();
-                    $(":lang(fr)").show();
-                    $(".nav-link:lang(fr)").css('display', 'block');
+                    showfr();
                 } 
                 else 
                 {
-                    $(":lang(fr)").hide();
-                    $(":lang(en)").show();
-                    $(".nav-link:lang(en)").css('display', 'block');
+                    showen();
                 }
             } 
             else
@@ -396,11 +407,11 @@
 
                 if (userLang == 'fr') 
                 {
-                    window.location.replace(window.location.pathname + '?fr');
+                    showfr();
                 }
                 else
                 {
-                    window.location.replace(window.location.pathname + '?en');
+                    showen();
                 }
             }
         </script>
